@@ -9,3 +9,43 @@
 .navbar{
     background-color:#1E1E1E ;  
 }
+
+.searchbar{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.searchbarone{
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.searchthebar{
+    width: 800px;
+}
+
+.card{
+    background-color:#1E1E1E  ;
+    border-color: white;
+    color: #F9A133;
+}
+
+.favorites{
+    color: white;
+    padding-top: 50px;
+
+}
+
+
+.navbuttons{
+ 
+}
+
+.btn{
+    background-color: #D72127;
+    border-color: #D72127;
+    color: white;
+    width: 7rem;
+    height: 3rem;
+}
