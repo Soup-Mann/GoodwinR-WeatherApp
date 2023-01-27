@@ -37,70 +37,120 @@
         <div class="row">
             <div class="col searchbar">
     <form class="d-flex searchthebar" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="townName">
               
             </form>
             </div>
         </div>
         <div class="row">
             <div class="col searchbarone">
-                <button class="btn" type="submit">Search</button>
+                <button class="btn" id="townBtn" type="submit">Search</button>
             </div>
         </div>
 
 
-        <div id="injectHere" class="col-8">This is where the local weather will go</div>
-  
-    <div class="row">
+<div class="row">
+    <div class="col-12">
+        <h3 id="townName" class="text-center favorites">Manteca</h3>
+    </div>
+</div>
+<br>
+        <div class="row">
+            <div class="col-4">
+                
+        <div id="injectHere" class="col-8 favorite1">This is where the local weather will go</div>
+        <h6 class="favorite">Now</h5>
+            </div>
+            <div class="col-4">
+               
+    <div id="minTemp" class="col-8 favorite1">
+        local minTemp
+    </div>
+     <h6 class="favorite">Min</h5>
+    </div>
+    <div class="col-4 ">
+
+        <div id="maxTemp" class="col-8 favorite1">max</div>
+ <h6 class="favorite">Max</h5>
+    </div>
+        </div>
+
+
+
+
+
+    <div class="row cardRow">
         <br>
         <div class="col">
     <div class="card" style="width: 12rem; height: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <div id="injectHere" class="col-8"></div>
 
+        <div class="card-body">
+          <h5 id="day1date" class="card-title">Day 1</h5>
+          <p id="day1Temp"></p>
+          <p id="day1min"></p>
+          <p id="day1max"></p>
+          <div id="injectHere" class="col-8"></div>
+<p id="weatherIcon"></p>
+<p id="weatherIcons"></p>
         </div>
       </div>
     </div>
     <div class="col">
         <div class="card" style="width: 12rem; height: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 id="day2date" class="card-title">Day 2</h5>
+            
+              <p id="day2Temp"></p>
+              <p id="day2min"></p>
+              <p id="day2max"></p>
               <div id="injectHere" class="col-8"></div>
+              <p id="weatherIcon2"></p>
+              <p id="weatherIcon2s"></p>
             </div>
           </div>
         </div>
         <div class="col">
             <div class="card" style="width: 12rem; height: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+        
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h5 id="day3date" class="card-title">Day 3</h5>
+              
+                  <p id="day3Temp"></p>
+                  <p id="day3min"></p>
+                  <p id="day3max"></p>
                   <div id="injectHere" class="col-8"></div>
+                  <p id="weatherIcon3"></p>
+                  <p id="weatherIcon3s"></p>
                 </div>
               </div>
             </div>
             <div class="col">
                 <div class="card" style="width: 12rem; height: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
+              
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <h5 id="day4date" class="card-title">Day 4</h5>
+                    
+                      <p id="day4Temp"></p>
+                      <p id="day4min"></p>
+                      <p id="day4max"></p>
                       <div id="injectHere" class="col-8"></div>
+                      <p id="weatherIcon4"></p>
+                      <p id="weatherIcon4s"></p>
                     </div>
                   </div>
                 </div>
                 <div class="col">
                     <div class="card" style="width: 12rem; height: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                   
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <h5 id="day5date" class="card-title">Day 5</h5>
+                          <p id="day5Temp"></p>
+                          <p id="day5min"></p>
+                          <p id="day5max"></p>
                           <div id="injectHere" class="col-8"></div>
+                          <p id="weatherIcon5"></p>
+                          <p id="weatherIcon5s"></p>
                         </div>
                       </div>
                     </div>

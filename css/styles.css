@@ -33,9 +33,25 @@
 
 .favorites{
     color: white;
-    padding-top: 50px;
+    padding-top: 25px;
 
 }
+.favorite{
+    padding-left: 50px;
+    color: white;
+
+}
+
+.favorite1{
+    padding-left: 50px;
+    color: white;
+    font-size: larger;
+}
+
+.cardRow{
+    padding-top: 50px;
+}
+
 
 
 .navbuttons{
