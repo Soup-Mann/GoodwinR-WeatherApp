@@ -46,6 +46,10 @@ let weatherIcon4s = document.getElementById('weatherIcon4s');
 let weatherIcon5s = document.getElementById('weatherIcon5s');
 
 
+let localweather = document.getElementById('localweather');
+let localweather2 = document.getElementById('localweather2');
+let localIntro = document.getElementById('localIntro');
+
 
 townBtn.addEventListener('click', function(){
 console.log(townName.value);
@@ -75,6 +79,11 @@ function getData() {
 
         console.log(cpuResponse.main.temp_max);
         maxTemp.textContent = cpuResponse.main.temp_max;
+
+        localweather.textContent = cpuResponse.weather[0].main;
+        localweather2.textContent = cpuResponse.weather[0].description;
+        // localweather.textContent = cpuResponse.
+
 })
 
 }
