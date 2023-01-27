@@ -1,3 +1,14 @@
+import {prod, dev} from './environment.js'
+let apiKey = '&appid=';
+
+if(prod.isLive == true)
+{
+    apiKey += prod.apiKey;
+}else{
+    apiKey += dev.apiKey;
+}
+
+
 let townBtn = document.getElementById('townBtn');
 let townName = document.getElementById('townName');
 // current Temperatures Manteca Declarations
@@ -66,7 +77,7 @@ getData2()
 
     
 function getData() {
-    fetch('https://api.openweathermap.org/data/2.5/weather?lat=37.7974&lon=-121.2161&appid=876472bfa888fce903a2ff2b5d460cdf&units=imperial').then(response => response.json()).then(data => {
+    fetch('https://api.openweathermap.org/data/2.5/weather?lat=37.7974&lon=-121.2161' + apiKey + '&units=imperial').then(response => response.json()).then(data => {
        let cpuResponse = data
        console.log(cpuResponse);
        console.log(cpuResponse.name);
@@ -89,7 +100,7 @@ function getData() {
 }
 
 function getData2() {
-    fetch('https://api.openweathermap.org/data/2.5/forecast?lat=37.7974&lon=-121.2161&appid=876472bfa888fce903a2ff2b5d460cdf&units=imperial').then(response => response.json()).then(data => {
+    fetch('https://api.openweathermap.org/data/2.5/forecast?lat=37.7974&lon=-121.2161' + apiKey + '&units=imperial').then(response => response.json()).then(data => {
        let cpuResponse2 = data
        console.log(cpuResponse2);
       console.log(cpuResponse2.list[0].dt_txt)
